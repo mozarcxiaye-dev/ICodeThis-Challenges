@@ -1,0 +1,58 @@
+/* Add CSS here */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+.lists{
+    color: #b7c4d7;
+    cursor: pointer;
+    transition: all ease-in 0.1s;
+    
+}
+.lists:hover{
+    font-weight: 600;
+    color: rgb(69, 104, 175);
+}
+.lists:nth-child(3){
+    position: relative;
+}
+.lists:nth-child(3)::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: #f0f1f3;
+    height: 4px;
+    top: 36px;
+}
+.cards{
+    width: 100%;
+    margin: .4px;
+    object-fit: contain;
+    border: .2px solid rgb(178, 175, 175);
+}
+/* .cards-img{
+    height: 5rem;
+} */
+.cards-img > img {
+    aspect-ratio: 19/9;
+    object-fit: cover;
+}
+.cards-content{
+    margin-bottom: .7rem;
+}
+.recom-cards {
+    width: 20%;
+    margin: .4px;
+    border: .2px solid rgb(178, 175, 175);
+}
+
+.recom-cards-img>img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
