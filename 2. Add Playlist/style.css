@@ -1,0 +1,93 @@
+/* Add CSS here */
+
+:root{
+    --fc-purplish-gradient : #8006FD;
+    --fc-bluish-gradient : #2762DE;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background: rgb(39, 98, 222);
+    background: linear-gradient(90deg, rgba(39, 98, 222, 1) 0%, rgba(128, 6, 253, 1) 100%);
+}
+.vid-lists{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+transition: all 2s ease;
+}
+
+.vid-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+.vid{
+    position: relative;
+    max-width: 10rem;
+    max-height: 7rem;
+    border-radius: 6px;
+    padding: .5rem;
+    
+
+}
+
+.vid video{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+    box-shadow: 1px 1.5px 3px 1px #13515a;
+}
+.vid span{
+    position: absolute;
+    font-size: .8rem;
+    bottom: 10px;
+    left: 14px;
+    background: #C0C8D2;
+    color: #fff;
+    padding: 1px .4rem;
+    opacity: .85;
+    border-radius: 18px;
+}
+.vid-description{
+    font-size: .75rem;
+    padding: .5rem;
+}
+.vid-title{
+    font-weight: 700;
+}
+.vid-description p{
+    color: #0389D1;
+    font-weight: 600;
+}
+.active{
+    transform: scale(1.14);
+    padding:  0 .6rem;
+    /* padding: 0 .5rem; */
+
+    background: linear-gradient(to right, #028DD2, #02B6E2);
+}
+.vid-title[active]{
+    color: #fff;
+}
+.toggler{
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.rotateToggler{
+    transform: rotate(180deg);
+}
+.noDisplay{
+    display: none;
+}
